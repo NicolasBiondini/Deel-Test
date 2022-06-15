@@ -1,0 +1,23 @@
+version: "3.2"
+
+services:
+  nginx:
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "80:80"
+    restart: always
+
+  backend-deel:
+      build:
+          dockerfile: Dockerfile
+          context: ./backend
+      expose:
+        - "3001"
+
+  frontend-deel:
+      build:
+          dockerfile: Dockerfile
+          context: ./frontend
+
