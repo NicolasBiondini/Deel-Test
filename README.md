@@ -10,7 +10,7 @@
 </div>
 
 # To start the project
-    git clone https://github.com/NicolasBiondini/Deel-Test/
+    git clone https://github.com/NicolasBiondini/Deel-Test.git
     cd Deel-Test
 
 To build the images
